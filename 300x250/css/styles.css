@@ -87,7 +87,16 @@ body {
       left: 0px;
       top: 0px;
       background: #00a650; }
-    #bradContainer #bradContent #t1, #bradContainer #bradContent #t2, #bradContainer #bradContent #t3, #bradContainer #bradContent #wt {
+    #bradContainer #bradContent #bradFlare {
+      width: 192px;
+      height: 133px;
+      position: absolute;
+      left: 110px;
+      top: 0px;
+      background-image: url(../img/flare.png); }
+    #bradContainer #bradContent #t1,
+    #bradContainer #bradContent #t2,
+    #bradContainer #bradContent #t3 {
       position: absolute;
       left: 0px;
       top: 0px; }
@@ -103,12 +112,27 @@ body {
       width: 300px;
       height: 250px;
       background-image: url(../img/t3.png); }
-    #bradContainer #bradContent #wt {
+    #bradContainer #bradContent #t1a {
+      position: absolute;
       left: 20px;
-      top: 83px;
+      top: 84px;
       width: 254px;
-      height: 96px;
-      background-image: url(../img/wt.png); }
+      height: 23px;
+      background-image: url(../img/t1a.svg); }
+    #bradContainer #bradContent #t1b {
+      position: absolute;
+      left: 48px;
+      top: 119px;
+      width: 196px;
+      height: 23px;
+      background-image: url(../img/t1b.svg); }
+    #bradContainer #bradContent #t1c {
+      position: absolute;
+      left: 63px;
+      top: 155px;
+      width: 180px;
+      height: 23px;
+      background-image: url(../img/t1c.svg); }
     #bradContainer #bradContent #t4 {
       position: absolute;
       left: 12px;
@@ -139,11 +163,36 @@ body {
       background-image: url(../img/d1.png); }
     #bradContainer #bradContent #d2 {
       position: absolute;
-      left: 230px;
-      top: 55px;
+      left: 148px;
+      top: 33px;
       width: 157px;
       height: 206px;
       background-image: url(../img/d2.png); }
+    #bradContainer #bradContent #dna > #dna1,
+    #bradContainer #bradContent #dna > #dna2,
+    #bradContainer #bradContent #dna > #dna3 {
+      position: absolute; }
+    #bradContainer #bradContent #dna > #dna1 {
+      position: absolute;
+      left: 12px;
+      top: 0px;
+      width: 300px;
+      height: 250px;
+      background-image: url(../img/dna1.png); }
+    #bradContainer #bradContent #dna > #dna2 {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 300px;
+      height: 250px;
+      background-image: url(../img/dna2.png); }
+    #bradContainer #bradContent #dna > #dna3 {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 300px;
+      height: 250px;
+      background-image: url(../img/dna3.png); }
     #bradContainer #bradContent #bradFooter {
       background: #fff;
       width: 300px;
