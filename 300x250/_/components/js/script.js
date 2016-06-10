@@ -22,10 +22,10 @@ function startAd(){
     bgtl.from("#grnBackground", .6, {opacity:0});
     
     var dtl = new TimelineLite();
-    dtl.from("#d1", .6, {scale:0, opacity:0, ease: Back.easeOut.config(1)})
-    .to("#d1", 1, {x:-240, ease: Power3.easeOut}, 2)
-    .from("#d2", 1, {opacity:0, x: 350, ease: Power3.easeOut}, 2)
-    .from("#dna3", .6, {opacity:0, ease: Power3.easeOut}, 2.8);
+    dtl.from("#d1", 1, {scale:0, opacity:0, ease: Back.easeOut.config(1)})
+    .to("#d1", 1.4, {x:-240, ease: Power3.easeOut}, 2.4)
+    .from("#d2", 1.4, {opacity:0, x: 350, ease: Power3.easeOut}, 2.4)
+    .from("#dna3", .6, {opacity:0, ease: Power3.easeOut}, 3.8);
     
     var ettl = new TimelineLite();
     ettl.from("#t4", .8, {y:-20, opacity:0, ease: Power3.easeOut})
@@ -42,11 +42,11 @@ function startAd(){
         .from("#bradFlare1", .8, {x:-100, opacity:0,ease: Power3.easeOut}, 0);
     
     tl.add(ttl, 0);
-    tl.add(bgtl, 12.2);
-    tl.add(dtl, 8.7);
-    tl.add(ettl, 12.4);
-    tl.add(ftl, 14);
-    tl.add(ctl, 14);
+    tl.add(bgtl, 13);
+    tl.add(dtl, 9.2);
+    tl.add(ettl, 13);
+    tl.add(ftl, 14.8);
+    tl.add(ctl, 14.8);
     
     tl.totalDuration(15);
            
