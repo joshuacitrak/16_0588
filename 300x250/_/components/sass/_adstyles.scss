@@ -43,7 +43,7 @@
               top: 0px;
               background: #00a650;
           }
-          #bradFlare {
+          #bradFlare, #bradFlare1 {
               width: 192px;
               height: 133px;
               position: absolute;
@@ -73,6 +73,12 @@
               height: 250px;
               background-image: url(../img/t3.png);
           }
+          #t1a,
+          #t1b,
+          #t1c {
+              background-color: transparent;
+              background-repeat: no-repeat;
+          }
           #t1a {
               position: absolute;
               left: 20px;
@@ -91,10 +97,10 @@
           }
           #t1c {
               position: absolute;
-              left: 63px;
+              left: 60px;
               top: 155px;
-              width: 180px;
-              height: 23px;
+              width: 183px;
+              height: 24px;
               background-image: url(../img/t1c.svg);
           }
           #t4 {
@@ -136,27 +142,6 @@
               width: 157px;
               height: 206px;
               background-image: url(../img/d2.png);
-          }
-          #dna>#dna1,
-          #dna>#dna2,
-          #dna>#dna3 {
-              position: absolute;
-          }
-          #dna>#dna1 {
-              position: absolute;
-              left: 12px;
-              top: 0px;
-              width: 300px;
-              height: 250px;
-              background-image: url(../img/dna1.png);
-          }
-          #dna>#dna2 {
-              position: absolute;
-              left: 0px;
-              top: 0px;
-              width: 300px;
-              height: 250px;
-              background-image: url(../img/dna2.png);
           }
           #dna>#dna3 {
               position: absolute;
