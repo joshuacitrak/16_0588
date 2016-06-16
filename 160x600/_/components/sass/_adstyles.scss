@@ -1,0 +1,203 @@
+  body {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+  }
+  
+  #bradContainer {
+      font-family: sans-serif;
+      position: relative;
+      background: #00a650;
+      width: 160px;
+      height: 600px;
+      border: 1px solid #00a650;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; // IE8
+      /* This works in IE 8 & 9 too */
+      /* ... but also 5, 6, 7 */
+      filter: alpha(opacity=0); // IE 5-7
+      /* Modern Browsers */
+      opacity: 0;
+      #bradContent {
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          #bradBackground {
+              width: 160px;
+              height: 600px;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              background-image: url(../img/bg.jpg);
+          }
+          #grnBackground {
+              width: 160px;
+              height: 600px;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              background: #00a650;
+          }
+          #bradFlare,
+          #bradFlare1 {
+              width: 192px;
+              height: 133px;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              background-image: url(../img/flare.png);
+          }
+          #t1,
+          #t2,
+          #t3 {
+              position: absolute;
+              background-repeat: no-repeat;
+              left: -388px;
+              top: 138px;
+          }
+          #t1 {
+              width: 936px;
+              height: 349px;
+              background-image: url(../img/t1.png);
+          }
+          #t2 {
+              width: 936px;
+              height: 348px;
+              background-image: url(../img/t2.png);
+          }
+          #t3 {
+              width: 936px;
+              height: 349px;
+              background-image: url(../img/t3.png);
+          }
+          #t1a,
+          #t1b,
+          #t1c {
+              background-color: transparent;
+              background-repeat: no-repeat;
+          }
+          #t1a {
+              position: absolute;
+              left: 6px;
+top: 285px;
+width: 147px;
+height: 14px;
+              background-image: url(../img/t1a.svg);
+          }
+          #t1b {
+              position: absolute;
+              left: 23px;
+top: 305px;
+width: 113px;
+height: 14px;
+              background-image: url(../img/t1b.svg);
+          }
+          #t1c {
+              position: absolute;
+              left: 30px;
+top: 327px;
+width: 105px;
+height: 15px;
+              background-image: url(../img/t1c.svg);
+          }
+          #t4 {
+              position: absolute;
+              left: 20px;
+              top: 81px;
+              width: 87px;
+              height: 13px;
+              background-image: url(../img/t4.png);
+          }
+          #t5 {
+              position: absolute;
+              left: 20px;
+              top: 335px;
+              width: 121px;
+              height: 46px;
+              background-image: url(../img/t5.png);
+          }
+          #t6 {
+              position: absolute;
+              left: 20px;
+              top: 390px;
+              width: 110px;
+              height: 46px;
+              background-image: url(../img/t6.png);
+          }
+          #d1 {
+              position: absolute;
+              left: 20px;
+              top: 101px;
+              width: 207px;
+              height: 193px;
+              background-image: url(../img/d1.png);
+          }
+          #d2 {
+              position: absolute;
+              left: -40px;
+              top: 101px;
+              width: 242px;
+              height: 242px;
+              background-image: url(../img/d2.png);
+          }
+          #dna>#dna3 {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 160px;
+              height: 600px;
+              background-image: url(../img/dna3.png);
+          }
+          #bradFooter {
+              background: #fff;
+              width: 160px;
+              height: 94px;
+              position: absolute;
+              top: 506px;
+              #bradLogo {
+                  background-image: url(../img/logo.png);
+                  position: absolute;
+                  top: 34px;
+                  left: 30px;
+                  width: 101px;
+                  height: 27px;
+              }
+              #bradCtaButton {
+                  background: #fa7700;
+                  position: absolute;
+                  top: -48px;
+                  left: 20px;
+                  width: 121px;
+                  height: 30px;
+                  #bradCtaTxt {
+                      background-image: url(../img/ctat.png);
+                      position: absolute;
+                      top: 8px;
+                      left: 10px;
+                      width: 95px;
+                      height: 14px;
+                  }
+              }
+          }
+      }
+  }
+  
+  button {
+      padding: 10px;
+      margin-top: 10px;
+  }
+  
+  button:nth-child(1) {
+      margin-left: 10px;
+  }
+  
+  #slider {
+      width: 300px;
+      margin: 10px;
+      background-color: #ff0;
+  }

@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+#bradContainer {
+  font-family: sans-serif;
+  position: relative;
+  background: #00a650;
+  width: 728px;
+  height: 90px;
+  border: 1px solid #00a650;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* This works in IE 8 & 9 too */
+  /* ... but also 5, 6, 7 */
+  filter: alpha(opacity=0);
+  /* Modern Browsers */
+  opacity: 0; }
+  #bradContainer #bradContent {
+    cursor: pointer;
+    width: 100%;
+    height: 100%; }
+    #bradContainer #bradContent #bradBackground {
+      width: 728px;
+      height: 90px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background-image: url(../img/bg.jpg); }
+    #bradContainer #bradContent #grnBackground {
+      width: 728px;
+      height: 90px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: #00a650; }
+    #bradContainer #bradContent #bradFlare, #bradContainer #bradContent #bradFlare1 {
+      width: 192px;
+      height: 133px;
+      position: absolute;
+      left: 380px;
+      top: 0px;
+      background-image: url(../img/flare.png); }
+    #bradContainer #bradContent #t1,
+    #bradContainer #bradContent #t2,
+    #bradContainer #bradContent #t3 {
+      position: absolute;
+      left: 36px;
+      top: 32px; }
+    #bradContainer #bradContent #t1 {
+      width: 651px;
+      height: 25px;
+      background-image: url(../img/t1.png); }
+    #bradContainer #bradContent #t2 {
+      width: 651px;
+      height: 24px;
+      background-image: url(../img/t2.png); }
+    #bradContainer #bradContent #t3 {
+      width: 651px;
+      height: 24px;
+      background-image: url(../img/t3.png); }
+    #bradContainer #bradContent #t1a,
+    #bradContainer #bradContent #t1b,
+    #bradContainer #bradContent #t1c {
+      background-color: transparent;
+      background-repeat: no-repeat; }
+    #bradContainer #bradContent #t1a {
+      position: absolute;
+      left: 36px;
+      top: 32px;
+      width: 254px;
+      height: 23px;
+      background-image: url(../img/t1a.svg); }
+    #bradContainer #bradContent #t1b {
+      position: absolute;
+      left: 299px;
+      top: 32px;
+      width: 196px;
+      height: 23px;
+      background-image: url(../img/t1b.svg); }
+    #bradContainer #bradContent #t1c {
+      position: absolute;
+      left: 505px;
+      top: 32px;
+      width: 183px;
+      height: 24px;
+      background-image: url(../img/t1c.svg); }
+    #bradContainer #bradContent #t5 {
+      position: absolute;
+      left: 138px;
+      top: 19px;
+      width: 144px;
+      height: 52px;
+      background-image: url(../img/t5.png); }
+    #bradContainer #bradContent #t6 {
+      position: absolute;
+      left: 304px;
+      top: 19px;
+      width: 131px;
+      height: 52px;
+      background-image: url(../img/t6.png); }
+    #bradContainer #bradContent #d1 {
+      position: absolute;
+      left: 483px;
+      top: -40px;
+      width: 207px;
+      height: 193px;
+      background-image: url(../img/d1.png); }
+    #bradContainer #bradContent #d2 {
+      position: absolute;
+      left: -66px;
+      top: -43px;
+      width: 207px;
+      height: 208px;
+      background-image: url(../img/d2.png); }
+    #bradContainer #bradContent #dna > #dna3 {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 300px;
+      height: 250px;
+      background-image: url(../img/dna3.png); }
+    #bradContainer #bradContent #bradFooter {
+      background: #fff;
+      width: 140px;
+      height: 90px;
+      position: absolute;
+      left: 588px; }
+      #bradContainer #bradContent #bradFooter #bradLogo {
+        background-image: url(../img/logo.png);
+        position: absolute;
+        top: 36px;
+        left: 25px;
+        width: 93px;
+        height: 23px; }
+      #bradContainer #bradContent #bradFooter #bradCtaButton {
+        background: #fa7700;
+        position: absolute;
+        top: 36px;
+        left: -134px;
+        width: 92px;
+        height: 24px; }
+        #bradContainer #bradContent #bradFooter #bradCtaButton #bradCtaTxt {
+          background-image: url(../img/ctat.png);
+          position: absolute;
+          top: 6px;
+          left: 9px;
+          width: 77px;
+          height: 11px; }
+
+button {
+  padding: 10px;
+  margin-top: 10px; }
+
+button:nth-child(1) {
+  margin-left: 10px; }
+
+#slider {
+  width: 300px;
+  margin: 10px;
+  background-color: #ff0; }
