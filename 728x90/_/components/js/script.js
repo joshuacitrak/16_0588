@@ -1,22 +1,22 @@
 function startAd(){  
    var ttl = new TimelineLite();
     ttl.from("#t1", .8, { opacity:0, ease: Power3.easeOut})
-        .to("#t1", .8, {opacity:0}, 1.6)
+        .to("#t1", .8, {opacity:0}, 1)
         .from("#t2", .8, {opacity:0 }, .4)
-        .to("#t2", .8, {opacity:0, ease: Power3.easeOut}, 3)
-        .from("#t3", .8, {opacity:0}, 1.6)
-        .to("#t3", .8, { opacity:0 }, 2.8)
+        .to("#t2", .8, {opacity:0, ease: Power3.easeOut}, 2.2)
+        .from("#t3", .8, {opacity:0}, 1)
+        .to("#t3", .8, { opacity:0 }, 2.2)
     
-        .to("#t1", .8, {opacity:1, ease: Power3.easeOut}, 2.8)
-        .to("#t1", .8, { opacity:0}, 4.2)
+        .to("#t1", .8, {opacity:1, ease: Power3.easeOut}, 2.2)
+        .to("#t1", .8, { opacity:0}, 3.4)
     
-        .from("#t1a", .8, {opacity:0}, 4.2)
-        .from("#t1b", .8, {opacity:0}, 4.2)
-        .from("#t1c", .8, {opacity:0}, 4.2)
-        .to("#t1a", 1, {scale:2, x:-1200, ease: Power3.easeOut}, 6.8)
-        .to("#t1b", 1, {scale:4, x:-800, ease: Power3.easeOut }, 6.8)
-        .to("#t1c", 1, {css:{z:430, x:-29},  ease: Power3.easeOut}, 6.8)
-        .to("#t1c", 1, {opacity:0, ease: Power3.easeOut}, 7.3);
+        .from("#t1a", .8, {opacity:0}, 3.4)
+        .from("#t1b", .8, {opacity:0}, 3.4)
+        .from("#t1c", .8, {opacity:0}, 3.4)
+        .to("#t1a", 1, {scale:2, x:-1200, ease: Power3.easeOut}, 6)
+        .to("#t1b", 1, {scale:4, x:-800, ease: Power3.easeOut }, 6)
+        .to("#t1c", 1, {css:{z:430, x:-29},  ease: Power3.easeOut}, 6)
+        .to("#t1c", 1, {opacity:0, ease: Power3.easeOut}, 6.5);
     
     var bgtl = new TimelineLite();
     bgtl.from("#grnBackground", .6, {opacity:0});
@@ -41,13 +41,13 @@ function startAd(){
         .from("#bradFlare1", .8, {x:-100, opacity:0,ease: Power3.easeOut}, 0);
     
    tl.add(ttl, 0);
-    tl.add(bgtl, 11.4);
-    tl.add(dtl, 7.8);
-    tl.add(ettl, 11.4);
-    tl.add(ftl, 13.2);
-    tl.add(ctl, 13.2);
+    tl.add(bgtl, 10.8);
+    tl.add(dtl, 7.2);
+    tl.add(ettl, 10.8);
+    tl.add(ftl, 12.2);
+    tl.add(ctl, 12.2);
     
-    tl.totalDuration(14);
+    tl.totalDuration(13);
            
 };
 
@@ -83,42 +83,6 @@ function checkInit() {
 
 window.addEventListener('load', checkInit);
 
-var tl = new TimelineLite({onUpdate:updateSlider});
+var tl = new TimelineLite();
 tl.eventCallback("onComplete", animationComplete);
-
-
-$("#play").click(function() {
-  //play() only plays forward from current position. If timeline has finished, play() has nowhere to go.
-  //if the timeline is not done then play() or else restart() (restart always restarts from the beginning).
-
-  if(tl.progress() != 1){
-    //carl just changed this again
-		tl.play();
-  } else {
-    tl.restart();
-  }
-});
-		
-$("#pause").click(function() {
-		tl.pause();
-});
-		
-$("#restart").click(function() {
-		tl.restart();
-});		
 	
-$("#slider").slider({
-  range: false,
-  min: 0,
-  max: 100,
-  step:.1,
-  slide: function ( event, ui ) {
-    tl.pause();
-    //adjust the timeline's progress() based on slider value
-    tl.progress( ui.value/100 );
-    }
-});	
-		
-function updateSlider() {
-  $("#slider").slider("value", tl.progress() *100);
-} 	
